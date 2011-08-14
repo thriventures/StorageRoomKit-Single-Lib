@@ -14,6 +14,8 @@ void RKLogInitialize(void) {
     if (loggingInitialized == NO) {
         lcl_configure_by_name("RestKit*", RKLogLevelDefault);
         lcl_configure_by_name("App", RKLogLevelDefault);
+        lcl_configure_by_name("StorageRoomKit*", RKLogLevelDefault);
+        
         RKLogInfo(@"RestKit initialized...");
         loggingInitialized = YES;
     }

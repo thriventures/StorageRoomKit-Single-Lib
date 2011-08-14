@@ -46,4 +46,7 @@ _lcl_component(RestKitObjectMapping,        "restkit.object_mapping",       "Res
 _lcl_component(RestKitCoreData,             "restkit.core_data",            "RestKit/CoreData")
 _lcl_component(App,                         "app",                          "App")
 
-_lcl_component(StorageRoomKit,              "storageroomkit",               "StorageRoomKit")
+_lcl_component(StorageRoomKit,                     "storageroomkit",                      "StorageRoomKit")
+_lcl_component(StorageRoomKitNetwork,              "storageroomkit.network",              "StorageRoomKit/Network")
+_lcl_component(StorageRoomKitObjectMapping,        "storageroomkit.object_mapping",       "StorageRoomKit/ObjectMapping")
+_lcl_component(StorageRoomKitCoreData,             "storageroomkit.core_data",            "StorageRoomKit/CoreData")

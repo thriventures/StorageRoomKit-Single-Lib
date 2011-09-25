@@ -18,12 +18,12 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    RKLogConfigureByName("RestKit/Network*", RKLogLevelTrace);
+    RKLogConfigureByName("RestKit/Network*", RKLogLevelTrace);
     // Initialize RestKit
 	RKObjectManager* objectManager = [RKObjectManager objectManagerWithBaseURL:@"http://twitter.com"];
     
     // Enable automatic network activity indicator management
-    [RKRequestQueue sharedQueue].showsNetworkActivityIndicatorWhenBusy = YES;
+    objectManager.client.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
     
     // Setup our object mappings
     RKObjectMapping* userMapping = [RKObjectMapping mappingForClass:[RKTUser class]];

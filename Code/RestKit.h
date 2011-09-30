@@ -22,6 +22,8 @@
 #import "Support/Support.h"
 #import "ObjectMapping/ObjectMapping.h"
 
+#import "StorageRoom/StorageRoom.h"
+
 /**
  Set the App logging component. This header
  file is generally only imported by apps that

@@ -25,6 +25,8 @@
 				255B7599133BABCD00ED76AD /* PBXTargetDependency */,
 				259DF78A134029BB00233DF4 /* PBXTargetDependency */,
 				255B759B133BABCD00ED76AD /* PBXTargetDependency */,
+				537CEC451435A5FE00B64F78 /* PBXTargetDependency */,
+				537CEC471435A5FE00B64F78 /* PBXTargetDependency */,
 			);
 			name = RestKit;
 			productName = RestKit;
@@ -309,6 +311,97 @@
 		3F71ED3513748536006281CA /* RKObjectMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F71ED3313748536006281CA /* RKObjectMappingProvider.m */; };
 		3FD12C851379AD64008B996A /* RKRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD12C841379AD64008B996A /* RKRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40A0C79C14212B3B00D36DD2 /* DynamicKeysWithRelationship.json in Resources */ = {isa = PBXBuildFile; fileRef = 409341EC14211E7900EF4609 /* DynamicKeysWithRelationship.json */; };
+		537CEB611435A0DE00B64F78 /* Base.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F296D14359E3A00BA4153 /* Base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB621435A0E700B64F78 /* NSString+InflectionSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F296E14359E3A00BA4153 /* NSString+InflectionSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB631435A0E700B64F78 /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F296F14359E3A00BA4153 /* NSString+InflectionSupport.m */; };
+		537CEB641435A0E700B64F78 /* RKObjectMapping+SRExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F297014359E3A00BA4153 /* RKObjectMapping+SRExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB651435A0E700B64F78 /* RKObjectMapping+SRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F297114359E3A00BA4153 /* RKObjectMapping+SRExtension.m */; };
+		537CEB661435A10B00B64F78 /* SRAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F297214359E3A00BA4153 /* SRAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB671435A10B00B64F78 /* SRAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F297314359E3A00BA4153 /* SRAccount.m */; };
+		537CEB681435A10B00B64F78 /* SRArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F297414359E3A00BA4153 /* SRArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB691435A10B00B64F78 /* SRArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F297514359E3A00BA4153 /* SRArray.m */; };
+		537CEB6A1435A10B00B64F78 /* SRArrayField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F297614359E3A00BA4153 /* SRArrayField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB6B1435A10B00B64F78 /* SRArrayField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F297714359E3A00BA4153 /* SRArrayField.m */; };
+		537CEB6C1435A10B00B64F78 /* SRAssociation.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F297814359E3A00BA4153 /* SRAssociation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB6D1435A10B00B64F78 /* SRAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F297914359E3A00BA4153 /* SRAssociation.m */; };
+		537CEB6E1435A10B00B64F78 /* SRAssociationField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F297A14359E3A00BA4153 /* SRAssociationField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB6F1435A10B00B64F78 /* SRAssociationField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F297B14359E3A00BA4153 /* SRAssociationField.m */; };
+		537CEB701435A10B00B64F78 /* SRAtomicField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F297C14359E3A00BA4153 /* SRAtomicField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB711435A10B00B64F78 /* SRAtomicField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F297D14359E3A00BA4153 /* SRAtomicField.m */; };
+		537CEB721435A10B00B64F78 /* SRAttachmentField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F297E14359E3A00BA4153 /* SRAttachmentField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB731435A10B00B64F78 /* SRAttachmentField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F297F14359E3A00BA4153 /* SRAttachmentField.m */; };
+		537CEB741435A10B00B64F78 /* SRBooleanField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298014359E3A00BA4153 /* SRBooleanField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB751435A10B00B64F78 /* SRBooleanField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F298114359E3A00BA4153 /* SRBooleanField.m */; };
+		537CEB761435A10B00B64F78 /* SRCollection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298214359E3A00BA4153 /* SRCollection+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		537CEB771435A10B00B64F78 /* SRCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298314359E3A00BA4153 /* SRCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB781435A10B00B64F78 /* SRCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F298414359E3A00BA4153 /* SRCollection.m */; };
+		537CEB791435A10B00B64F78 /* SRCompoundField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298514359E3A00BA4153 /* SRCompoundField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB7A1435A10B00B64F78 /* SRCompoundField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F298614359E3A00BA4153 /* SRCompoundField.m */; };
+		537CEB7B1435A10B00B64F78 /* SRDateField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298714359E3A00BA4153 /* SRDateField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB7C1435A10B00B64F78 /* SRDateField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F298814359E3A00BA4153 /* SRDateField.m */; };
+		537CEB7D1435A10B00B64F78 /* SRDeletedEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298914359E3A00BA4153 /* SRDeletedEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB7E1435A10B00B64F78 /* SRDeletedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F298A14359E3A00BA4153 /* SRDeletedEntry.m */; };
+		537CEB7F1435A10B00B64F78 /* SREmbedded.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298B14359E3A00BA4153 /* SREmbedded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB801435A10B00B64F78 /* SREmbedded.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F298C14359E3A00BA4153 /* SREmbedded.m */; };
+		537CEB811435A10B00B64F78 /* SREntry+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298D14359E3A00BA4153 /* SREntry+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		537CEB821435A10B00B64F78 /* SREntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F298E14359E3A00BA4153 /* SREntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB831435A10B00B64F78 /* SREntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F298F14359E3A00BA4153 /* SREntry.m */; };
+		537CEB841435A10B00B64F78 /* SREntryMappingDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299014359E3A00BA4153 /* SREntryMappingDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB851435A10B00B64F78 /* SREntryMappingDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F299114359E3A00BA4153 /* SREntryMappingDelegate.m */; };
+		537CEB861435A10B00B64F78 /* SREntryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299214359E3A00BA4153 /* SREntryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB871435A10B00B64F78 /* SRField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299314359E3A00BA4153 /* SRField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB881435A10B00B64F78 /* SRField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F299414359E3A00BA4153 /* SRField.m */; };
+		537CEB891435A10B00B64F78 /* SRFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299514359E3A00BA4153 /* SRFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB8A1435A10B00B64F78 /* SRFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F299614359E3A00BA4153 /* SRFile.m */; };
+		537CEB8B1435A10B00B64F78 /* SRFileField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299714359E3A00BA4153 /* SRFileField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB8C1435A10B00B64F78 /* SRFileField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F299814359E3A00BA4153 /* SRFileField.m */; };
+		537CEB8D1435A10B00B64F78 /* SRFloatField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299914359E3A00BA4153 /* SRFloatField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB8E1435A10B00B64F78 /* SRFloatField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F299A14359E3A00BA4153 /* SRFloatField.m */; };
+		537CEB8F1435A10B00B64F78 /* SRHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299B14359E3A00BA4153 /* SRHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB901435A10B00B64F78 /* SRHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F299C14359E3A00BA4153 /* SRHelpers.m */; };
+		537CEB911435A10B00B64F78 /* SRImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299D14359E3A00BA4153 /* SRImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB921435A10B00B64F78 /* SRImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F299E14359E3A00BA4153 /* SRImage.m */; };
+		537CEB931435A10B00B64F78 /* SRImageField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F299F14359E3A00BA4153 /* SRImageField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB941435A10B00B64F78 /* SRImageField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29A014359E3A00BA4153 /* SRImageField.m */; };
+		537CEB951435A10B00B64F78 /* SRImageVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29A114359E3A00BA4153 /* SRImageVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB961435A10B00B64F78 /* SRImageVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29A214359E3A00BA4153 /* SRImageVersion.m */; };
+		537CEB971435A10B00B64F78 /* SRIntegerField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29A314359E3A00BA4153 /* SRIntegerField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB981435A10B00B64F78 /* SRIntegerField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29A414359E3A00BA4153 /* SRIntegerField.m */; };
+		537CEB991435A10B00B64F78 /* SRJsonField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29A514359E3A00BA4153 /* SRJsonField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB9A1435A10B00B64F78 /* SRJsonField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29A614359E3A00BA4153 /* SRJsonField.m */; };
+		537CEB9B1435A10B00B64F78 /* SRLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29A714359E3A00BA4153 /* SRLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB9C1435A10B00B64F78 /* SRLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29A814359E3A00BA4153 /* SRLocation.m */; };
+		537CEB9D1435A10B00B64F78 /* SRLocationField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29A914359E3A00BA4153 /* SRLocationField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEB9E1435A10B00B64F78 /* SRLocationField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29AA14359E3A00BA4153 /* SRLocationField.m */; };
+		537CEB9F1435A10B00B64F78 /* SRManyAssociationField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29AB14359E3A00BA4153 /* SRManyAssociationField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBA01435A10B00B64F78 /* SRManyAssociationField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29AC14359E3A00BA4153 /* SRManyAssociationField.m */; };
+		537CEBA11435A10B00B64F78 /* SRMappableObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29AD14359E3A00BA4153 /* SRMappableObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBA21435A10B00B64F78 /* SRModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29AE14359E3A00BA4153 /* SRModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBA31435A10B00B64F78 /* SRModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29AF14359E3A00BA4153 /* SRModel.m */; };
+		537CEBA41435A10B00B64F78 /* SRObject+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29B014359E3A00BA4153 /* SRObject+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		537CEBA51435A10B00B64F78 /* SRObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29B114359E3A00BA4153 /* SRObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBA61435A10B00B64F78 /* SRObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29B214359E3A00BA4153 /* SRObject.m */; };
+		537CEBA71435A10B00B64F78 /* SRObjectManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29B314359E3A00BA4153 /* SRObjectManager+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		537CEBA81435A10B00B64F78 /* SRObjectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29B414359E3A00BA4153 /* SRObjectManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBA91435A10B00B64F78 /* SRObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29B514359E3A00BA4153 /* SRObjectManager.m */; };
+		537CEBAA1435A10B00B64F78 /* SRObjectMappingProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29B614359E3A00BA4153 /* SRObjectMappingProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBAB1435A10B00B64F78 /* SRObjectMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29B714359E3A00BA4153 /* SRObjectMappingProvider.m */; };
+		537CEBAC1435A10B00B64F78 /* SROneAssociationField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29B814359E3A00BA4153 /* SROneAssociationField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBAD1435A10B00B64F78 /* SROneAssociationField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29B914359E3A00BA4153 /* SROneAssociationField.m */; };
+		537CEBAE1435A10B00B64F78 /* SRResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29BA14359E3A00BA4153 /* SRResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBAF1435A10B00B64F78 /* SRResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29BB14359E3A00BA4153 /* SRResource.m */; };
+		537CEBB01435A10B00B64F78 /* SRRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29BC14359E3A00BA4153 /* SRRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBB11435A10B00B64F78 /* SRRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29BD14359E3A00BA4153 /* SRRouter.m */; };
+		537CEBB21435A10B00B64F78 /* SRStringField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29BE14359E3A00BA4153 /* SRStringField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBB31435A10B00B64F78 /* SRStringField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29BF14359E3A00BA4153 /* SRStringField.m */; };
+		537CEBB41435A10B00B64F78 /* SRTimeField.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29C014359E3A00BA4153 /* SRTimeField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBB51435A10B00B64F78 /* SRTimeField.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29C114359E3A00BA4153 /* SRTimeField.m */; };
+		537CEBB61435A10B00B64F78 /* SRWebhookDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29C214359E3A00BA4153 /* SRWebhookDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEBB71435A10B00B64F78 /* SRWebhookDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29C314359E3A00BA4153 /* SRWebhookDefinition.m */; };
+		537CEBE21435A52300B64F78 /* Base.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F296D14359E3A00BA4153 /* Base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEC411435A58E00B64F78 /* CoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29C514359E3A00BA4153 /* CoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEC421435A58E00B64F78 /* SRCoreDataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 530F29C614359E3A00BA4153 /* SRCoreDataHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537CEC431435A58E00B64F78 /* SRCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F29C714359E3A00BA4153 /* SRCoreDataHelper.m */; };
 		57D7EA2713D98672000E4E63 /* NSNumberCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7EA2213D98672000E4E63 /* NSNumberCreator.m */; };
 		57D7EA2813D98672000E4E63 /* UIConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7EA2313D98672000E4E63 /* UIConsoleLog.m */; };
 		57D7EA2913D98672000E4E63 /* UIExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7EA2413D98672000E4E63 /* UIExpectation.m */; };
@@ -425,6 +518,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 255B7588133BABBF00ED76AD;
 			remoteInfo = RestKit;
+		};
+		537CEC441435A5FE00B64F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 537CEB201435A02F00B64F78;
+			remoteInfo = StorageRoomBase;
+		};
+		537CEC461435A5FE00B64F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 537CEBB81435A52300B64F78;
+			remoteInfo = StorageRoomCoreData;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -754,6 +861,99 @@
 		3F71ED3313748536006281CA /* RKObjectMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingProvider.m; sourceTree = "<group>"; };
 		3FD12C841379AD64008B996A /* RKRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRouter.h; path = Code/ObjectMapping/RKRouter.h; sourceTree = SOURCE_ROOT; };
 		409341EC14211E7900EF4609 /* DynamicKeysWithRelationship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DynamicKeysWithRelationship.json; sourceTree = "<group>"; };
+		530F296D14359E3A00BA4153 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		530F296E14359E3A00BA4153 /* NSString+InflectionSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+InflectionSupport.h"; sourceTree = "<group>"; };
+		530F296F14359E3A00BA4153 /* NSString+InflectionSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+InflectionSupport.m"; sourceTree = "<group>"; };
+		530F297014359E3A00BA4153 /* RKObjectMapping+SRExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKObjectMapping+SRExtension.h"; sourceTree = "<group>"; };
+		530F297114359E3A00BA4153 /* RKObjectMapping+SRExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RKObjectMapping+SRExtension.m"; sourceTree = "<group>"; };
+		530F297214359E3A00BA4153 /* SRAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAccount.h; sourceTree = "<group>"; };
+		530F297314359E3A00BA4153 /* SRAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAccount.m; sourceTree = "<group>"; };
+		530F297414359E3A00BA4153 /* SRArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRArray.h; sourceTree = "<group>"; };
+		530F297514359E3A00BA4153 /* SRArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRArray.m; sourceTree = "<group>"; };
+		530F297614359E3A00BA4153 /* SRArrayField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRArrayField.h; sourceTree = "<group>"; };
+		530F297714359E3A00BA4153 /* SRArrayField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRArrayField.m; sourceTree = "<group>"; };
+		530F297814359E3A00BA4153 /* SRAssociation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAssociation.h; sourceTree = "<group>"; };
+		530F297914359E3A00BA4153 /* SRAssociation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAssociation.m; sourceTree = "<group>"; };
+		530F297A14359E3A00BA4153 /* SRAssociationField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAssociationField.h; sourceTree = "<group>"; };
+		530F297B14359E3A00BA4153 /* SRAssociationField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAssociationField.m; sourceTree = "<group>"; };
+		530F297C14359E3A00BA4153 /* SRAtomicField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAtomicField.h; sourceTree = "<group>"; };
+		530F297D14359E3A00BA4153 /* SRAtomicField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAtomicField.m; sourceTree = "<group>"; };
+		530F297E14359E3A00BA4153 /* SRAttachmentField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAttachmentField.h; sourceTree = "<group>"; };
+		530F297F14359E3A00BA4153 /* SRAttachmentField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAttachmentField.m; sourceTree = "<group>"; };
+		530F298014359E3A00BA4153 /* SRBooleanField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRBooleanField.h; sourceTree = "<group>"; };
+		530F298114359E3A00BA4153 /* SRBooleanField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRBooleanField.m; sourceTree = "<group>"; };
+		530F298214359E3A00BA4153 /* SRCollection+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRCollection+Private.h"; sourceTree = "<group>"; };
+		530F298314359E3A00BA4153 /* SRCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCollection.h; sourceTree = "<group>"; };
+		530F298414359E3A00BA4153 /* SRCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCollection.m; sourceTree = "<group>"; };
+		530F298514359E3A00BA4153 /* SRCompoundField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCompoundField.h; sourceTree = "<group>"; };
+		530F298614359E3A00BA4153 /* SRCompoundField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCompoundField.m; sourceTree = "<group>"; };
+		530F298714359E3A00BA4153 /* SRDateField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDateField.h; sourceTree = "<group>"; };
+		530F298814359E3A00BA4153 /* SRDateField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDateField.m; sourceTree = "<group>"; };
+		530F298914359E3A00BA4153 /* SRDeletedEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDeletedEntry.h; sourceTree = "<group>"; };
+		530F298A14359E3A00BA4153 /* SRDeletedEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDeletedEntry.m; sourceTree = "<group>"; };
+		530F298B14359E3A00BA4153 /* SREmbedded.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SREmbedded.h; sourceTree = "<group>"; };
+		530F298C14359E3A00BA4153 /* SREmbedded.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SREmbedded.m; sourceTree = "<group>"; };
+		530F298D14359E3A00BA4153 /* SREntry+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SREntry+Private.h"; sourceTree = "<group>"; };
+		530F298E14359E3A00BA4153 /* SREntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SREntry.h; sourceTree = "<group>"; };
+		530F298F14359E3A00BA4153 /* SREntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SREntry.m; sourceTree = "<group>"; };
+		530F299014359E3A00BA4153 /* SREntryMappingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SREntryMappingDelegate.h; sourceTree = "<group>"; };
+		530F299114359E3A00BA4153 /* SREntryMappingDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SREntryMappingDelegate.m; sourceTree = "<group>"; };
+		530F299214359E3A00BA4153 /* SREntryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SREntryProtocol.h; sourceTree = "<group>"; };
+		530F299314359E3A00BA4153 /* SRField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRField.h; sourceTree = "<group>"; };
+		530F299414359E3A00BA4153 /* SRField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRField.m; sourceTree = "<group>"; };
+		530F299514359E3A00BA4153 /* SRFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRFile.h; sourceTree = "<group>"; };
+		530F299614359E3A00BA4153 /* SRFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRFile.m; sourceTree = "<group>"; };
+		530F299714359E3A00BA4153 /* SRFileField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRFileField.h; sourceTree = "<group>"; };
+		530F299814359E3A00BA4153 /* SRFileField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRFileField.m; sourceTree = "<group>"; };
+		530F299914359E3A00BA4153 /* SRFloatField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRFloatField.h; sourceTree = "<group>"; };
+		530F299A14359E3A00BA4153 /* SRFloatField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRFloatField.m; sourceTree = "<group>"; };
+		530F299B14359E3A00BA4153 /* SRHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRHelpers.h; sourceTree = "<group>"; };
+		530F299C14359E3A00BA4153 /* SRHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRHelpers.m; sourceTree = "<group>"; };
+		530F299D14359E3A00BA4153 /* SRImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRImage.h; sourceTree = "<group>"; };
+		530F299E14359E3A00BA4153 /* SRImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRImage.m; sourceTree = "<group>"; };
+		530F299F14359E3A00BA4153 /* SRImageField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRImageField.h; sourceTree = "<group>"; };
+		530F29A014359E3A00BA4153 /* SRImageField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRImageField.m; sourceTree = "<group>"; };
+		530F29A114359E3A00BA4153 /* SRImageVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRImageVersion.h; sourceTree = "<group>"; };
+		530F29A214359E3A00BA4153 /* SRImageVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRImageVersion.m; sourceTree = "<group>"; };
+		530F29A314359E3A00BA4153 /* SRIntegerField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRIntegerField.h; sourceTree = "<group>"; };
+		530F29A414359E3A00BA4153 /* SRIntegerField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRIntegerField.m; sourceTree = "<group>"; };
+		530F29A514359E3A00BA4153 /* SRJsonField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRJsonField.h; sourceTree = "<group>"; };
+		530F29A614359E3A00BA4153 /* SRJsonField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRJsonField.m; sourceTree = "<group>"; };
+		530F29A714359E3A00BA4153 /* SRLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRLocation.h; sourceTree = "<group>"; };
+		530F29A814359E3A00BA4153 /* SRLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRLocation.m; sourceTree = "<group>"; };
+		530F29A914359E3A00BA4153 /* SRLocationField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRLocationField.h; sourceTree = "<group>"; };
+		530F29AA14359E3A00BA4153 /* SRLocationField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRLocationField.m; sourceTree = "<group>"; };
+		530F29AB14359E3A00BA4153 /* SRManyAssociationField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRManyAssociationField.h; sourceTree = "<group>"; };
+		530F29AC14359E3A00BA4153 /* SRManyAssociationField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRManyAssociationField.m; sourceTree = "<group>"; };
+		530F29AD14359E3A00BA4153 /* SRMappableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRMappableObject.h; sourceTree = "<group>"; };
+		530F29AE14359E3A00BA4153 /* SRModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRModel.h; sourceTree = "<group>"; };
+		530F29AF14359E3A00BA4153 /* SRModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRModel.m; sourceTree = "<group>"; };
+		530F29B014359E3A00BA4153 /* SRObject+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRObject+Private.h"; sourceTree = "<group>"; };
+		530F29B114359E3A00BA4153 /* SRObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRObject.h; sourceTree = "<group>"; };
+		530F29B214359E3A00BA4153 /* SRObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRObject.m; sourceTree = "<group>"; };
+		530F29B314359E3A00BA4153 /* SRObjectManager+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRObjectManager+Private.h"; sourceTree = "<group>"; };
+		530F29B414359E3A00BA4153 /* SRObjectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRObjectManager.h; sourceTree = "<group>"; };
+		530F29B514359E3A00BA4153 /* SRObjectManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRObjectManager.m; sourceTree = "<group>"; };
+		530F29B614359E3A00BA4153 /* SRObjectMappingProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRObjectMappingProvider.h; sourceTree = "<group>"; };
+		530F29B714359E3A00BA4153 /* SRObjectMappingProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRObjectMappingProvider.m; sourceTree = "<group>"; };
+		530F29B814359E3A00BA4153 /* SROneAssociationField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SROneAssociationField.h; sourceTree = "<group>"; };
+		530F29B914359E3A00BA4153 /* SROneAssociationField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SROneAssociationField.m; sourceTree = "<group>"; };
+		530F29BA14359E3A00BA4153 /* SRResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRResource.h; sourceTree = "<group>"; };
+		530F29BB14359E3A00BA4153 /* SRResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRResource.m; sourceTree = "<group>"; };
+		530F29BC14359E3A00BA4153 /* SRRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRRouter.h; sourceTree = "<group>"; };
+		530F29BD14359E3A00BA4153 /* SRRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRRouter.m; sourceTree = "<group>"; };
+		530F29BE14359E3A00BA4153 /* SRStringField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRStringField.h; sourceTree = "<group>"; };
+		530F29BF14359E3A00BA4153 /* SRStringField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRStringField.m; sourceTree = "<group>"; };
+		530F29C014359E3A00BA4153 /* SRTimeField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRTimeField.h; sourceTree = "<group>"; };
+		530F29C114359E3A00BA4153 /* SRTimeField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRTimeField.m; sourceTree = "<group>"; };
+		530F29C214359E3A00BA4153 /* SRWebhookDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRWebhookDefinition.h; sourceTree = "<group>"; };
+		530F29C314359E3A00BA4153 /* SRWebhookDefinition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRWebhookDefinition.m; sourceTree = "<group>"; };
+		530F29C514359E3A00BA4153 /* CoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreData.h; sourceTree = "<group>"; };
+		530F29C614359E3A00BA4153 /* SRCoreDataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCoreDataHelper.h; sourceTree = "<group>"; };
+		530F29C714359E3A00BA4153 /* SRCoreDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCoreDataHelper.m; sourceTree = "<group>"; };
+		530F29C814359E3A00BA4153 /* StorageRoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageRoom.h; sourceTree = "<group>"; };
+		537CEB4E1435A02F00B64F78 /* libStorageRoomBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStorageRoomBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		537CEC181435A52300B64F78 /* libStorageRoomCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStorageRoomCoreData.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D7EA2213D98672000E4E63 /* NSNumberCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NSNumberCreator.m; path = ../UISpecRunner/NSNumberCreator.m; sourceTree = "<group>"; };
 		57D7EA2313D98672000E4E63 /* UIConsoleLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UIConsoleLog.m; path = ../UISpecRunner/UIConsoleLog.m; sourceTree = "<group>"; };
 		57D7EA2413D98672000E4E63 /* UIExpectation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UIExpectation.m; path = ../UISpecRunner/UIExpectation.m; sourceTree = "<group>"; };
@@ -864,6 +1064,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		537CEB481435A02F00B64F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537CEC121435A52300B64F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73057FCF1331AD2E001908EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -885,6 +1099,8 @@
 				253A081412551D5300976E89 /* libRestKitCoreData.a */,
 				3F6C39A510FE5C95008F47C5 /* RestKitSpecs.app */,
 				20808DBD13DE8CDC000A156A /* libRestKitJSONParserNXJSON.a */,
+				537CEB4E1435A02F00B64F78 /* libStorageRoomBase.a */,
+				537CEC181435A52300B64F78 /* libStorageRoomCoreData.a */,
 			);
 			name = Products;
 			path = ../..;
@@ -1028,6 +1244,7 @@
 				253A086012551D8D00976E89 /* CoreData */,
 				253A089312551D8D00976E89 /* Support */,
 				253A089E12551D8D00976E89 /* Three20 */,
+				530F296B14359E3A00BA4153 /* StorageRoom */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -1587,6 +1804,136 @@
 			path = Specs;
 			sourceTree = "<group>";
 		};
+		530F296B14359E3A00BA4153 /* StorageRoom */ = {
+			isa = PBXGroup;
+			children = (
+				530F29C814359E3A00BA4153 /* StorageRoom.h */,
+				530F296C14359E3A00BA4153 /* Base */,
+				530F29C414359E3A00BA4153 /* CoreData */,
+			);
+			path = StorageRoom;
+			sourceTree = "<group>";
+		};
+		530F296C14359E3A00BA4153 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				53DAC52514359F6700D1EDD7 /* Classes */,
+				530F296D14359E3A00BA4153 /* Base.h */,
+				530F29DF14359E9F00BA4153 /* Categories */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		530F29C414359E3A00BA4153 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				530F29C514359E3A00BA4153 /* CoreData.h */,
+				530F29C614359E3A00BA4153 /* SRCoreDataHelper.h */,
+				530F29C714359E3A00BA4153 /* SRCoreDataHelper.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		530F29DF14359E9F00BA4153 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				530F296E14359E3A00BA4153 /* NSString+InflectionSupport.h */,
+				530F296F14359E3A00BA4153 /* NSString+InflectionSupport.m */,
+				530F297014359E3A00BA4153 /* RKObjectMapping+SRExtension.h */,
+				530F297114359E3A00BA4153 /* RKObjectMapping+SRExtension.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		53DAC52514359F6700D1EDD7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				530F297214359E3A00BA4153 /* SRAccount.h */,
+				530F297314359E3A00BA4153 /* SRAccount.m */,
+				530F297414359E3A00BA4153 /* SRArray.h */,
+				530F297514359E3A00BA4153 /* SRArray.m */,
+				530F297614359E3A00BA4153 /* SRArrayField.h */,
+				530F297714359E3A00BA4153 /* SRArrayField.m */,
+				530F297814359E3A00BA4153 /* SRAssociation.h */,
+				530F297914359E3A00BA4153 /* SRAssociation.m */,
+				530F297A14359E3A00BA4153 /* SRAssociationField.h */,
+				530F297B14359E3A00BA4153 /* SRAssociationField.m */,
+				530F297C14359E3A00BA4153 /* SRAtomicField.h */,
+				530F297D14359E3A00BA4153 /* SRAtomicField.m */,
+				530F297E14359E3A00BA4153 /* SRAttachmentField.h */,
+				530F297F14359E3A00BA4153 /* SRAttachmentField.m */,
+				530F298014359E3A00BA4153 /* SRBooleanField.h */,
+				530F298114359E3A00BA4153 /* SRBooleanField.m */,
+				530F298214359E3A00BA4153 /* SRCollection+Private.h */,
+				530F298314359E3A00BA4153 /* SRCollection.h */,
+				530F298414359E3A00BA4153 /* SRCollection.m */,
+				530F298514359E3A00BA4153 /* SRCompoundField.h */,
+				530F298614359E3A00BA4153 /* SRCompoundField.m */,
+				530F298714359E3A00BA4153 /* SRDateField.h */,
+				530F298814359E3A00BA4153 /* SRDateField.m */,
+				530F298914359E3A00BA4153 /* SRDeletedEntry.h */,
+				530F298A14359E3A00BA4153 /* SRDeletedEntry.m */,
+				530F298B14359E3A00BA4153 /* SREmbedded.h */,
+				530F298C14359E3A00BA4153 /* SREmbedded.m */,
+				530F298D14359E3A00BA4153 /* SREntry+Private.h */,
+				530F298E14359E3A00BA4153 /* SREntry.h */,
+				530F298F14359E3A00BA4153 /* SREntry.m */,
+				530F299014359E3A00BA4153 /* SREntryMappingDelegate.h */,
+				530F299114359E3A00BA4153 /* SREntryMappingDelegate.m */,
+				530F299214359E3A00BA4153 /* SREntryProtocol.h */,
+				530F299314359E3A00BA4153 /* SRField.h */,
+				530F299414359E3A00BA4153 /* SRField.m */,
+				530F299514359E3A00BA4153 /* SRFile.h */,
+				530F299614359E3A00BA4153 /* SRFile.m */,
+				530F299714359E3A00BA4153 /* SRFileField.h */,
+				530F299814359E3A00BA4153 /* SRFileField.m */,
+				530F299914359E3A00BA4153 /* SRFloatField.h */,
+				530F299A14359E3A00BA4153 /* SRFloatField.m */,
+				530F299B14359E3A00BA4153 /* SRHelpers.h */,
+				530F299C14359E3A00BA4153 /* SRHelpers.m */,
+				530F299D14359E3A00BA4153 /* SRImage.h */,
+				530F299E14359E3A00BA4153 /* SRImage.m */,
+				530F299F14359E3A00BA4153 /* SRImageField.h */,
+				530F29A014359E3A00BA4153 /* SRImageField.m */,
+				530F29A114359E3A00BA4153 /* SRImageVersion.h */,
+				530F29A214359E3A00BA4153 /* SRImageVersion.m */,
+				530F29A314359E3A00BA4153 /* SRIntegerField.h */,
+				530F29A414359E3A00BA4153 /* SRIntegerField.m */,
+				530F29A514359E3A00BA4153 /* SRJsonField.h */,
+				530F29A614359E3A00BA4153 /* SRJsonField.m */,
+				530F29A714359E3A00BA4153 /* SRLocation.h */,
+				530F29A814359E3A00BA4153 /* SRLocation.m */,
+				530F29A914359E3A00BA4153 /* SRLocationField.h */,
+				530F29AA14359E3A00BA4153 /* SRLocationField.m */,
+				530F29AB14359E3A00BA4153 /* SRManyAssociationField.h */,
+				530F29AC14359E3A00BA4153 /* SRManyAssociationField.m */,
+				530F29AD14359E3A00BA4153 /* SRMappableObject.h */,
+				530F29AE14359E3A00BA4153 /* SRModel.h */,
+				530F29AF14359E3A00BA4153 /* SRModel.m */,
+				530F29B014359E3A00BA4153 /* SRObject+Private.h */,
+				530F29B114359E3A00BA4153 /* SRObject.h */,
+				530F29B214359E3A00BA4153 /* SRObject.m */,
+				530F29B314359E3A00BA4153 /* SRObjectManager+Private.h */,
+				530F29B414359E3A00BA4153 /* SRObjectManager.h */,
+				530F29B514359E3A00BA4153 /* SRObjectManager.m */,
+				530F29B614359E3A00BA4153 /* SRObjectMappingProvider.h */,
+				530F29B714359E3A00BA4153 /* SRObjectMappingProvider.m */,
+				530F29B814359E3A00BA4153 /* SROneAssociationField.h */,
+				530F29B914359E3A00BA4153 /* SROneAssociationField.m */,
+				530F29BA14359E3A00BA4153 /* SRResource.h */,
+				530F29BB14359E3A00BA4153 /* SRResource.m */,
+				530F29BC14359E3A00BA4153 /* SRRouter.h */,
+				530F29BD14359E3A00BA4153 /* SRRouter.m */,
+				530F29BE14359E3A00BA4153 /* SRStringField.h */,
+				530F29BF14359E3A00BA4153 /* SRStringField.m */,
+				530F29C014359E3A00BA4153 /* SRTimeField.h */,
+				530F29C114359E3A00BA4153 /* SRTimeField.m */,
+				530F29C214359E3A00BA4153 /* SRWebhookDefinition.h */,
+				530F29C314359E3A00BA4153 /* SRWebhookDefinition.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		57D7EA2C13D98695000E4E63 /* UISpecRunner */ = {
 			isa = PBXGroup;
 			children = (
@@ -1783,6 +2130,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		537CEB211435A02F00B64F78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537CEB661435A10B00B64F78 /* SRAccount.h in Headers */,
+				537CEB681435A10B00B64F78 /* SRArray.h in Headers */,
+				537CEB6A1435A10B00B64F78 /* SRArrayField.h in Headers */,
+				537CEB6C1435A10B00B64F78 /* SRAssociation.h in Headers */,
+				537CEB6E1435A10B00B64F78 /* SRAssociationField.h in Headers */,
+				537CEB701435A10B00B64F78 /* SRAtomicField.h in Headers */,
+				537CEB721435A10B00B64F78 /* SRAttachmentField.h in Headers */,
+				537CEB741435A10B00B64F78 /* SRBooleanField.h in Headers */,
+				537CEB771435A10B00B64F78 /* SRCollection.h in Headers */,
+				537CEB791435A10B00B64F78 /* SRCompoundField.h in Headers */,
+				537CEB7B1435A10B00B64F78 /* SRDateField.h in Headers */,
+				537CEB7D1435A10B00B64F78 /* SRDeletedEntry.h in Headers */,
+				537CEB7F1435A10B00B64F78 /* SREmbedded.h in Headers */,
+				537CEB821435A10B00B64F78 /* SREntry.h in Headers */,
+				537CEB841435A10B00B64F78 /* SREntryMappingDelegate.h in Headers */,
+				537CEB861435A10B00B64F78 /* SREntryProtocol.h in Headers */,
+				537CEB871435A10B00B64F78 /* SRField.h in Headers */,
+				537CEB891435A10B00B64F78 /* SRFile.h in Headers */,
+				537CEB8B1435A10B00B64F78 /* SRFileField.h in Headers */,
+				537CEB8D1435A10B00B64F78 /* SRFloatField.h in Headers */,
+				537CEB8F1435A10B00B64F78 /* SRHelpers.h in Headers */,
+				537CEB911435A10B00B64F78 /* SRImage.h in Headers */,
+				537CEB931435A10B00B64F78 /* SRImageField.h in Headers */,
+				537CEB951435A10B00B64F78 /* SRImageVersion.h in Headers */,
+				537CEB971435A10B00B64F78 /* SRIntegerField.h in Headers */,
+				537CEB991435A10B00B64F78 /* SRJsonField.h in Headers */,
+				537CEB9B1435A10B00B64F78 /* SRLocation.h in Headers */,
+				537CEB9D1435A10B00B64F78 /* SRLocationField.h in Headers */,
+				537CEB9F1435A10B00B64F78 /* SRManyAssociationField.h in Headers */,
+				537CEBA11435A10B00B64F78 /* SRMappableObject.h in Headers */,
+				537CEBA21435A10B00B64F78 /* SRModel.h in Headers */,
+				537CEBA51435A10B00B64F78 /* SRObject.h in Headers */,
+				537CEBA81435A10B00B64F78 /* SRObjectManager.h in Headers */,
+				537CEBAA1435A10B00B64F78 /* SRObjectMappingProvider.h in Headers */,
+				537CEBAC1435A10B00B64F78 /* SROneAssociationField.h in Headers */,
+				537CEBAE1435A10B00B64F78 /* SRResource.h in Headers */,
+				537CEBB01435A10B00B64F78 /* SRRouter.h in Headers */,
+				537CEBB21435A10B00B64F78 /* SRStringField.h in Headers */,
+				537CEBB41435A10B00B64F78 /* SRTimeField.h in Headers */,
+				537CEBB61435A10B00B64F78 /* SRWebhookDefinition.h in Headers */,
+				537CEB611435A0DE00B64F78 /* Base.h in Headers */,
+				537CEB621435A0E700B64F78 /* NSString+InflectionSupport.h in Headers */,
+				537CEB641435A0E700B64F78 /* RKObjectMapping+SRExtension.h in Headers */,
+				537CEB761435A10B00B64F78 /* SRCollection+Private.h in Headers */,
+				537CEB811435A10B00B64F78 /* SREntry+Private.h in Headers */,
+				537CEBA41435A10B00B64F78 /* SRObject+Private.h in Headers */,
+				537CEBA71435A10B00B64F78 /* SRObjectManager+Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537CEBB91435A52300B64F78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537CEBE21435A52300B64F78 /* Base.h in Headers */,
+				537CEC411435A58E00B64F78 /* CoreData.h in Headers */,
+				537CEC421435A58E00B64F78 /* SRCoreDataHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73057FCD1331AD2E001908EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1968,6 +2379,40 @@
 			productReference = 3F6C39A510FE5C95008F47C5 /* RestKitSpecs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		537CEB201435A02F00B64F78 /* StorageRoomBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537CEB491435A02F00B64F78 /* Build configuration list for PBXNativeTarget "StorageRoomBase" */;
+			buildPhases = (
+				537CEB211435A02F00B64F78 /* Headers */,
+				537CEB361435A02F00B64F78 /* Sources */,
+				537CEB481435A02F00B64F78 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageRoomBase;
+			productName = RKNetwork;
+			productReference = 537CEB4E1435A02F00B64F78 /* libStorageRoomBase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		537CEBB81435A52300B64F78 /* StorageRoomCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537CEC131435A52300B64F78 /* Build configuration list for PBXNativeTarget "StorageRoomCoreData" */;
+			buildPhases = (
+				537CEBB91435A52300B64F78 /* Headers */,
+				537CEBE91435A52300B64F78 /* Sources */,
+				537CEC121435A52300B64F78 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageRoomCoreData;
+			productName = RKNetwork;
+			productReference = 537CEC181435A52300B64F78 /* libStorageRoomCoreData.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		73057FD01331AD2E001908EE /* RestKitJSONParser+JSONKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73057FD81331AD85001908EE /* Build configuration list for PBXNativeTarget "RestKitJSONParser+JSONKit" */;
@@ -2028,6 +2473,8 @@
 				253A081312551D5300976E89 /* RestKitCoreData */,
 				2523360411E79F090048F9B4 /* RestKitThree20 */,
 				3F6C39A410FE5C95008F47C5 /* RestKit Specs */,
+				537CEB201435A02F00B64F78 /* StorageRoomBase */,
+				537CEBB81435A52300B64F78 /* StorageRoomCoreData */,
 			);
 		};
 /* End PBXProject section */
@@ -2148,7 +2595,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -pf \"${SOURCE_ROOT}/Code/RestKit.h\" \"${TARGET_BUILD_DIR}/include/RestKit\"";
+			shellScript = "cp -pf \"${SOURCE_ROOT}/Code/RestKit.h\" \"${TARGET_BUILD_DIR}/include/RestKit\"\ncp -pf \"${SOURCE_ROOT}/Code/StorageRoom/StorageRoom.h\" \"${TARGET_BUILD_DIR}/include/RestKit/StorageRoom\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2358,6 +2805,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		537CEB361435A02F00B64F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537CEB631435A0E700B64F78 /* NSString+InflectionSupport.m in Sources */,
+				537CEB651435A0E700B64F78 /* RKObjectMapping+SRExtension.m in Sources */,
+				537CEB671435A10B00B64F78 /* SRAccount.m in Sources */,
+				537CEB691435A10B00B64F78 /* SRArray.m in Sources */,
+				537CEB6B1435A10B00B64F78 /* SRArrayField.m in Sources */,
+				537CEB6D1435A10B00B64F78 /* SRAssociation.m in Sources */,
+				537CEB6F1435A10B00B64F78 /* SRAssociationField.m in Sources */,
+				537CEB711435A10B00B64F78 /* SRAtomicField.m in Sources */,
+				537CEB731435A10B00B64F78 /* SRAttachmentField.m in Sources */,
+				537CEB751435A10B00B64F78 /* SRBooleanField.m in Sources */,
+				537CEB781435A10B00B64F78 /* SRCollection.m in Sources */,
+				537CEB7A1435A10B00B64F78 /* SRCompoundField.m in Sources */,
+				537CEB7C1435A10B00B64F78 /* SRDateField.m in Sources */,
+				537CEB7E1435A10B00B64F78 /* SRDeletedEntry.m in Sources */,
+				537CEB801435A10B00B64F78 /* SREmbedded.m in Sources */,
+				537CEB831435A10B00B64F78 /* SREntry.m in Sources */,
+				537CEB851435A10B00B64F78 /* SREntryMappingDelegate.m in Sources */,
+				537CEB881435A10B00B64F78 /* SRField.m in Sources */,
+				537CEB8A1435A10B00B64F78 /* SRFile.m in Sources */,
+				537CEB8C1435A10B00B64F78 /* SRFileField.m in Sources */,
+				537CEB8E1435A10B00B64F78 /* SRFloatField.m in Sources */,
+				537CEB901435A10B00B64F78 /* SRHelpers.m in Sources */,
+				537CEB921435A10B00B64F78 /* SRImage.m in Sources */,
+				537CEB941435A10B00B64F78 /* SRImageField.m in Sources */,
+				537CEB961435A10B00B64F78 /* SRImageVersion.m in Sources */,
+				537CEB981435A10B00B64F78 /* SRIntegerField.m in Sources */,
+				537CEB9A1435A10B00B64F78 /* SRJsonField.m in Sources */,
+				537CEB9C1435A10B00B64F78 /* SRLocation.m in Sources */,
+				537CEB9E1435A10B00B64F78 /* SRLocationField.m in Sources */,
+				537CEBA01435A10B00B64F78 /* SRManyAssociationField.m in Sources */,
+				537CEBA31435A10B00B64F78 /* SRModel.m in Sources */,
+				537CEBA61435A10B00B64F78 /* SRObject.m in Sources */,
+				537CEBA91435A10B00B64F78 /* SRObjectManager.m in Sources */,
+				537CEBAB1435A10B00B64F78 /* SRObjectMappingProvider.m in Sources */,
+				537CEBAD1435A10B00B64F78 /* SROneAssociationField.m in Sources */,
+				537CEBAF1435A10B00B64F78 /* SRResource.m in Sources */,
+				537CEBB11435A10B00B64F78 /* SRRouter.m in Sources */,
+				537CEBB31435A10B00B64F78 /* SRStringField.m in Sources */,
+				537CEBB51435A10B00B64F78 /* SRTimeField.m in Sources */,
+				537CEBB71435A10B00B64F78 /* SRWebhookDefinition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537CEBE91435A52300B64F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537CEC431435A58E00B64F78 /* SRCoreDataHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73057FCE1331AD2E001908EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2424,6 +2926,16 @@
 			isa = PBXTargetDependency;
 			target = 255B7588133BABBF00ED76AD /* RestKit */;
 			targetProxy = 25E5F2BD133C2EA500C33091 /* PBXContainerItemProxy */;
+		};
+		537CEC451435A5FE00B64F78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 537CEB201435A02F00B64F78 /* StorageRoomBase */;
+			targetProxy = 537CEC441435A5FE00B64F78 /* PBXContainerItemProxy */;
+		};
+		537CEC471435A5FE00B64F78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 537CEBB81435A52300B64F78 /* StorageRoomCoreData */;
+			targetProxy = 537CEC461435A5FE00B64F78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3405,6 +3917,126 @@
 			};
 			name = Release;
 		};
+		537CEB4A1435A02F00B64F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Debug;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/Base/Private;
+				PRODUCT_NAME = StorageRoomBase;
+				PUBLIC_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/Base;
+			};
+			name = Debug;
+		};
+		537CEB4B1435A02F00B64F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Release;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/Base/Private;
+				PRODUCT_NAME = StorageRoomBase;
+				PUBLIC_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/Base;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		537CEB4C1435A02F00B64F78 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Release;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/Base/Private;
+				PRODUCT_NAME = StorageRoomBase;
+				PUBLIC_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/Base;
+				ZERO_LINK = NO;
+			};
+			name = Distribution;
+		};
+		537CEB4D1435A02F00B64F78 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Release;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/Base/Private;
+				PRODUCT_NAME = StorageRoomBase;
+				PUBLIC_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/Base;
+				ZERO_LINK = NO;
+			};
+			name = "Ad Hoc";
+		};
+		537CEC141435A52300B64F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Debug;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/CoreData/Private;
+				PRODUCT_NAME = StorageRoomCoreData;
+				PUBLIC_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/CoreData;
+			};
+			name = Debug;
+		};
+		537CEC151435A52300B64F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Release;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/CoreData/Private;
+				PRODUCT_NAME = StorageRoomCoreData;
+				PUBLIC_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/CoreData;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		537CEC161435A52300B64F78 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Release;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/CoreData/Private;
+				PRODUCT_NAME = StorageRoomCoreData;
+				PUBLIC_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/CoreData;
+				ZERO_LINK = NO;
+			};
+			name = Distribution;
+		};
+		537CEC171435A52300B64F78 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Release;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/CoreData/Private;
+				PRODUCT_NAME = StorageRoomCoreData;
+				PUBLIC_HEADERS_FOLDER_PATH = include/RestKit/StorageRoom/CoreData;
+				ZERO_LINK = NO;
+			};
+			name = "Ad Hoc";
+		};
 		73057FD21331AD2E001908EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3569,6 +4201,28 @@
 				3F6C39A910FE5C95008F47C5 /* Release */,
 				253216531338CA940099A5DB /* Distribution */,
 				255920D713BDEDB400E9C29C /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537CEB491435A02F00B64F78 /* Build configuration list for PBXNativeTarget "StorageRoomBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537CEB4A1435A02F00B64F78 /* Debug */,
+				537CEB4B1435A02F00B64F78 /* Release */,
+				537CEB4C1435A02F00B64F78 /* Distribution */,
+				537CEB4D1435A02F00B64F78 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537CEC131435A52300B64F78 /* Build configuration list for PBXNativeTarget "StorageRoomCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537CEC141435A52300B64F78 /* Debug */,
+				537CEC151435A52300B64F78 /* Release */,
+				537CEC161435A52300B64F78 /* Distribution */,
+				537CEC171435A52300B64F78 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

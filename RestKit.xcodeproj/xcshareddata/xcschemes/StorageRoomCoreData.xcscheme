@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "537CEBB81435A52300B64F78"
-               BuildableName = "libStorageRoomBase.a"
+               BuildableName = "libStorageRoomCoreData.a"
                BlueprintName = "StorageRoomCoreData"
                ReferencedContainer = "container:RestKit.xcodeproj">
             </BuildableReference>

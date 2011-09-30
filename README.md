@@ -1,7 +1,9 @@
 Introduction
 =========================
 
-RestKit is a Cocoa framework for interacting with RESTful web services in Objective C on iOS and Mac OS X. It provides a set of primitives for interacting with web services wrapping GET, POST, PUT and DELETE HTTP verbs behind a clean, simple interface. RestKit also provides a system for modeling remote resources by mapping them from JSON (or XML) payloads back into local domain objects. Object mapping functions with normal NSObject derived classes with properties. There is also an object mapping implementation included that provides a Core Data backed store for persisting objects loaded from the web.
+**StorageRoomKit is a fork of RestKit that includes additional helper methods and classes to make it easier to use RestKit with the StorageRoom API (http://storageroomapp.com).**
+
+RestKit itself is a Cocoa framework for interacting with RESTful web services in Objective C on iOS and Mac OS X. It provides a set of primitives for interacting with web services wrapping GET, POST, PUT and DELETE HTTP verbs behind a clean, simple interface. RestKit also provides a system for modeling remote resources by mapping them from JSON (or XML) payloads back into local domain objects. Object mapping functions with normal NSObject derived classes with properties. There is also an object mapping implementation included that provides a Core Data backed store for persisting objects loaded from the web.
 
 RestKit was first publicly introduced in April of 2010.
 
@@ -10,18 +12,74 @@ To get started with installation, skip down the document below the Design & Depe
 Design
 -------------------------
 
-RestKit is composed of three main components: **Network**, **Object Mapping**, and **Core Data**. Each layer provides a higher level of abstraction around the problem of accessing web services and representing the data returned as an object. The primary goal of RestKit is to allow the application programmer to think more in terms of their application's data model and less about the details of fetching, parsing, and representing resources. Functionally, each piece provides...
+RestKit itself is composed of three main components: **Network**, **Object Mapping**, and **Core Data**. StorageRoomKit adds the **Storage Room** layer. Each layer provides a higher level of abstraction around the problem of accessing web services and representing the data returned as an object. The primary goal of RestKit is to allow the application programmer to think more in terms of their application's data model and less about the details of fetching, parsing, and representing resources. Functionally, each piece provides...
 
 1. **Network** - The network layer provides a request/response abstraction on top of NSURLConnection. The main interface for the end developer is the *RKClient*, which provides an interface for sending GET, POST, PUT, and DELETE requests asynchronously. This wraps the construction and dispatch of *RKRequest* and *RKResponse* objects, that provide a nice interface for working with HTTP requests. Sending parameters with your request is as easy as providing an NSDictionary of key/value pairs. File uploading support from NSData and files is supported through the use of an *RKParams* object, which serializes into a multipart form representation suitable for submission to a remote web server for processing. SSL & HTTP AUTH is fully supported for requests. *RKResponse* objects provide access to the string of JSON parsed versions of the response body in one line of code. There are also a number of helpful method for inspecting the request and response such as isXHTML, isJSON, isRedirect, isOK, etc.
 1. **Object Mapping** - The object mapping layer provides a simple API for turning remote JSON/XML responses into local domain objects declaratively. Rather than working directly with *RKClient*, the developer works with *RKObjectManager*. *RKObjectManager* provides support for loading a remote resource path (see below for discussion) and calling back a delegate with object representations of the data loaded. Remote payloads are parsed to an NSDictionary representation and are then mapped to local objects using Key-Value Coding. Any KVC compliant class can be targeted for object mapping. RestKit also provides support for serializing local objects back into a wire format for submission back to your remote backend system. Local domain objects can be serialized to JSON or URL Form Encoded string representations for transport. To simplify the generation of URL's that identify remote resources, RestKit ships with an object routing implementation that can
 generate an appropriate URL based on the object and HTTP verb being utilized. Object mapping is a deep topic and is explored thoroughly in the [Object Mapping Design Document].
 1. **Core Data** - The Core Data layer provides additional support on top of the object mapper for mapping from remote resources to persist local objects. This is useful for providing offline support, holding on to transient data, and speeding up user interfaces by avoiding expensive trips to the web server. The Core Data support requires that you initialize an instance of *RKManagedObjectStore* and assign it to the *RKObjectManager*. RestKit includes a library of extensions to NSManagedObject that provide an Active Record pattern on top of the Core Data primitives. See the Examples/ subdirectory for examples of how to get this running. The Core Data support also provides *RKManagedObjectSeeder*, a tool for creating a local "seed database" to bootstrap an object model from local JSON files. This allows you to ship an app to the store that already has data pre-loaded and then synchronize with the cloud to keep your clients up to date.
+1. **Storage Room** - This layer provides additional helper classes to use the StorageRoom API. *SRObjectManager*, *SRRouter* and *SRObjectMappingProvider* are subclasses of the original RestKit implementations and contain StorageRoom specific methods. Each main Resource in StorageRoom contains its own class, an an example is the *SRCollection* class.
 
-### Base URL and Resource Paths
+Basic Usage
+-------------------------
 
-RestKit utilizes the concepts of the Base URL and resource paths throughout the library. Basically the base URL is a prefix URL that all requests will be sent to. This prevents you from spreading server name details across the code base and repeatedly constructing URL fragments. The *RKClient* and *RKObjectManager* are both initialized with a base URL initially. All other operations dispatched through these objects work of a resource path, which is basically just a URL path fragment that is appended to the base URL before constructing the request. This allows you to switch between development, staging, and production servers very easily and reduces redundancy.
+This is a walkthrough with all steps for a simple usage scenario of the library with StorageRoom.
 
-Note that you can send *RKRequest* objects to arbitrary URL's by constructing them yourself.
+1. Import the headers
+
+        #import <RestKit/RestKit.h>
+        #import <RestKit/CoreData/CoreData.h> // optionally include CoreData
+
+1. Add the SREntry protocol to your custom class
+
+        @interface Announcement : NSObject <SREntry> {
+
+        }
+
+        @property (nonatomic, retain) NSString * text;
+        @property (nonatomic, retain) NSString * mUrl;
+
+        @end
+
+1. Implement the SREntry protocol methods
+
+        + (RKObjectMapping *)objectMapping {
+            RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[self class]];
+
+            [mapping mapSRAttributes:@"text", nil];
+            [mapping mapSRMetaData:@"url", nil]; // will map to mUrl
+
+            return mapping;
+        }
+
+        + (NSString *)entryType {
+            return @"Announcement";
+        }
+
+1. Create the ObjectManager
+
+        [SRObjectManager objectManagerForAccountId:@"STORAGE_ROOM_ACCOUNT_ID" authenticationToken:@"AUTHENTICATION_TOKEN"];
+
+1. Work with API Resources
+
+        [[SRObjectManager sharedManager] loadObjectsAtResourcePath:SRCollectionEntriesPath(@"COLLECTION_ID") delegate:self];    
+
+1. Do something with the returned object(s) in the delegate
+
+        - (void)objectLoader:(RKObjectLoader *)anObjectLoader didLoadObject:(Announcement *)anAnnouncement {
+            self.announcementLabel.text = anAnnouncement.text;
+        }
+
+Meta Data
+------------------------------
+
+The JSON representations of Resources in the StorageRoom API contain meta data attributes that are prefixed with an "@" character. An example for this is the 
+"@created_at" meta data attribute, which shows the time at which a Resource was created on the server.
+
+RestKit relies heavily on Key-Value Coding (KVC), but "@" is an invalid character in KVC. The StorageRoom API therefore allows to change the prefix used for 
+meta data. StorageRoomKit changes this prefix for you from "@" to "m_". In the internal classes used by StorageRoom meta data attributes are mapped to an
+instance variable with the "m" prefix (e.g. "m_created_at" will be mapped to "mCreatedAt"). You can follow this convention in your own Entry classes,
+but you are not required to.
 
 Dependencies
 -------------------------
@@ -46,7 +104,16 @@ XML parsing is supported via a custom, bundled parser written against LibXML.
 
 Additional parsing backend support is expected in future versions.
 
-Documentation & Example Code
+StorageRoomKit: Documentation & Example Code
+-------------------------
+
+Run "rake docs:install" to generate the AppleDoc from the source files and install it into Xcode.
+
+The StorageRoom API Documentation (http://storageroomapp.com/developers) contains further information about the web service.
+
+The Example folder contains detailed examples on how to use StorageRoomKit (SRCatalog).
+
+RestKit: Documentation & Example Code
 -------------------------
 
 Documentation and example code is being added as quickly as possible. Please check the Docs/ and Examples/ subdirectories to see what's available. The [RestKit Google Group](http://groups.google.com/group/restkit) is an invaluable resource for getting help working with the library.
@@ -56,6 +123,8 @@ RestKit has API documentation available on the web. You can access the documenta
 1. Online in your web browser. Visit http://restkit.org/api/
 1. Directly within Xcode. Visit your Xcode Preferences and view the Documentation tab. Click + and add the RestKit feed: feed://restkit.org/api/org.restkit.RestKit.atom
 1. Generate the documentation directly from the project source code. Run `rake docs` to generate and `rake docs:install` to install into Xcode
+
+
 
 Installation
 =========================
@@ -80,6 +149,7 @@ Quick Start (aka TL;DR)
     1. **libRestKitSupport.a**
     1. **libRestKitObjectMapping.a**
     1. **libRestKitNetwork.a**
+    1. **libStorageRoomBase.a**
     1. A JSON parser implementation (either **libRestKitJSONParserJSONKit.a**, **libRestKitJSONParserYAJL.a**, or **libRestKitJSONParserSBJSON.a**). We recommend JSONKit.
 1. Import the RestKit headers via `#import <RestKit/RestKit.h>`
 1. Build the project to verify installation is successful.
@@ -97,6 +167,7 @@ Forks, patches and other feedback are always welcome.
 A Google Group for development and usage of library is available at: [http://groups.google.com/group/restkit](http://groups.google.com/group/restkit)
 
 Follow RestKit on Twitter:[http://twitter.com/restkit](http://twitter.com/restkit)
+Follow StorageRoom on Twitter:[http://twitter.com/thriventures](http://twitter.com/thriventures)
 
 ### RestKit is brought to you by [Two Toasters](http://www.twotoasters.com/). ###
 

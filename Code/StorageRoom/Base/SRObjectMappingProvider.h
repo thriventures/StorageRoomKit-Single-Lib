@@ -6,7 +6,7 @@
 //  Copyright 2011 Thriventures. All rights reserved.
 //
 
-#import "RKObjectMappingProvider.h"
+#import "../../ObjectMapping/RKObjectMappingProvider.h"
 
 /**
  * An extended version of RKObjectMappingProvider that contains custom methods to support the StorageRoom API.

@@ -1817,9 +1817,11 @@
 		530F296C14359E3A00BA4153 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				53DAC52514359F6700D1EDD7 /* Classes */,
-				530F296D14359E3A00BA4153 /* Base.h */,
+				530F299B14359E3A00BA4153 /* SRHelpers.h */,
+				530F299C14359E3A00BA4153 /* SRHelpers.m */,
+				537D2FBA1435B73900B0C36D /* Protocols */,
 				530F29DF14359E9F00BA4153 /* Categories */,
+				53DAC52514359F6700D1EDD7 /* Classes */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1845,91 +1847,169 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		53DAC52514359F6700D1EDD7 /* Classes */ = {
+		537CECAB1435B42200B64F78 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				530F29BA14359E3A00BA4153 /* SRResource.h */,
+				530F29BB14359E3A00BA4153 /* SRResource.m */,
+				537CECAE1435B48300B64F78 /* Resources */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		537CECAD1435B42B00B64F78 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				530F29B314359E3A00BA4153 /* SRObjectManager+Private.h */,
+				530F29B414359E3A00BA4153 /* SRObjectManager.h */,
+				530F29B514359E3A00BA4153 /* SRObjectManager.m */,
+				530F29B614359E3A00BA4153 /* SRObjectMappingProvider.h */,
+				530F29B714359E3A00BA4153 /* SRObjectMappingProvider.m */,
+				530F29BC14359E3A00BA4153 /* SRRouter.h */,
+				530F29BD14359E3A00BA4153 /* SRRouter.m */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		537CECAE1435B48300B64F78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				537CECB01435B4A000B64F78 /* Embedded */,
+				530F29AE14359E3A00BA4153 /* SRModel.h */,
+				530F29AF14359E3A00BA4153 /* SRModel.m */,
+				537CECAF1435B49800B64F78 /* Models */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		537CECAF1435B49800B64F78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				530F297214359E3A00BA4153 /* SRAccount.h */,
 				530F297314359E3A00BA4153 /* SRAccount.m */,
 				530F297414359E3A00BA4153 /* SRArray.h */,
 				530F297514359E3A00BA4153 /* SRArray.m */,
-				530F297614359E3A00BA4153 /* SRArrayField.h */,
-				530F297714359E3A00BA4153 /* SRArrayField.m */,
-				530F297814359E3A00BA4153 /* SRAssociation.h */,
-				530F297914359E3A00BA4153 /* SRAssociation.m */,
-				530F297A14359E3A00BA4153 /* SRAssociationField.h */,
-				530F297B14359E3A00BA4153 /* SRAssociationField.m */,
-				530F297C14359E3A00BA4153 /* SRAtomicField.h */,
-				530F297D14359E3A00BA4153 /* SRAtomicField.m */,
-				530F297E14359E3A00BA4153 /* SRAttachmentField.h */,
-				530F297F14359E3A00BA4153 /* SRAttachmentField.m */,
-				530F298014359E3A00BA4153 /* SRBooleanField.h */,
-				530F298114359E3A00BA4153 /* SRBooleanField.m */,
 				530F298214359E3A00BA4153 /* SRCollection+Private.h */,
 				530F298314359E3A00BA4153 /* SRCollection.h */,
 				530F298414359E3A00BA4153 /* SRCollection.m */,
-				530F298514359E3A00BA4153 /* SRCompoundField.h */,
-				530F298614359E3A00BA4153 /* SRCompoundField.m */,
-				530F298714359E3A00BA4153 /* SRDateField.h */,
-				530F298814359E3A00BA4153 /* SRDateField.m */,
 				530F298914359E3A00BA4153 /* SRDeletedEntry.h */,
 				530F298A14359E3A00BA4153 /* SRDeletedEntry.m */,
-				530F298B14359E3A00BA4153 /* SREmbedded.h */,
-				530F298C14359E3A00BA4153 /* SREmbedded.m */,
 				530F298D14359E3A00BA4153 /* SREntry+Private.h */,
 				530F298E14359E3A00BA4153 /* SREntry.h */,
 				530F298F14359E3A00BA4153 /* SREntry.m */,
-				530F299014359E3A00BA4153 /* SREntryMappingDelegate.h */,
-				530F299114359E3A00BA4153 /* SREntryMappingDelegate.m */,
-				530F299214359E3A00BA4153 /* SREntryProtocol.h */,
-				530F299314359E3A00BA4153 /* SRField.h */,
-				530F299414359E3A00BA4153 /* SRField.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		537CECB01435B4A000B64F78 /* Embedded */ = {
+			isa = PBXGroup;
+			children = (
+				530F297814359E3A00BA4153 /* SRAssociation.h */,
+				530F297914359E3A00BA4153 /* SRAssociation.m */,
+				530F298B14359E3A00BA4153 /* SREmbedded.h */,
+				530F298C14359E3A00BA4153 /* SREmbedded.m */,
 				530F299514359E3A00BA4153 /* SRFile.h */,
 				530F299614359E3A00BA4153 /* SRFile.m */,
-				530F299714359E3A00BA4153 /* SRFileField.h */,
-				530F299814359E3A00BA4153 /* SRFileField.m */,
-				530F299914359E3A00BA4153 /* SRFloatField.h */,
-				530F299A14359E3A00BA4153 /* SRFloatField.m */,
-				530F299B14359E3A00BA4153 /* SRHelpers.h */,
-				530F299C14359E3A00BA4153 /* SRHelpers.m */,
-				530F299D14359E3A00BA4153 /* SRImage.h */,
-				530F299E14359E3A00BA4153 /* SRImage.m */,
-				530F299F14359E3A00BA4153 /* SRImageField.h */,
-				530F29A014359E3A00BA4153 /* SRImageField.m */,
-				530F29A114359E3A00BA4153 /* SRImageVersion.h */,
-				530F29A214359E3A00BA4153 /* SRImageVersion.m */,
-				530F29A314359E3A00BA4153 /* SRIntegerField.h */,
-				530F29A414359E3A00BA4153 /* SRIntegerField.m */,
-				530F29A514359E3A00BA4153 /* SRJsonField.h */,
-				530F29A614359E3A00BA4153 /* SRJsonField.m */,
 				530F29A714359E3A00BA4153 /* SRLocation.h */,
 				530F29A814359E3A00BA4153 /* SRLocation.m */,
-				530F29A914359E3A00BA4153 /* SRLocationField.h */,
-				530F29AA14359E3A00BA4153 /* SRLocationField.m */,
-				530F29AB14359E3A00BA4153 /* SRManyAssociationField.h */,
-				530F29AC14359E3A00BA4153 /* SRManyAssociationField.m */,
-				530F29AD14359E3A00BA4153 /* SRMappableObject.h */,
-				530F29AE14359E3A00BA4153 /* SRModel.h */,
-				530F29AF14359E3A00BA4153 /* SRModel.m */,
-				530F29B014359E3A00BA4153 /* SRObject+Private.h */,
-				530F29B114359E3A00BA4153 /* SRObject.h */,
-				530F29B214359E3A00BA4153 /* SRObject.m */,
-				530F29B314359E3A00BA4153 /* SRObjectManager+Private.h */,
-				530F29B414359E3A00BA4153 /* SRObjectManager.h */,
-				530F29B514359E3A00BA4153 /* SRObjectManager.m */,
-				530F29B614359E3A00BA4153 /* SRObjectMappingProvider.h */,
-				530F29B714359E3A00BA4153 /* SRObjectMappingProvider.m */,
-				530F29B814359E3A00BA4153 /* SROneAssociationField.h */,
-				530F29B914359E3A00BA4153 /* SROneAssociationField.m */,
-				530F29BA14359E3A00BA4153 /* SRResource.h */,
-				530F29BB14359E3A00BA4153 /* SRResource.m */,
-				530F29BC14359E3A00BA4153 /* SRRouter.h */,
-				530F29BD14359E3A00BA4153 /* SRRouter.m */,
+				530F29C214359E3A00BA4153 /* SRWebhookDefinition.h */,
+				530F29C314359E3A00BA4153 /* SRWebhookDefinition.m */,
+				530F299D14359E3A00BA4153 /* SRImage.h */,
+				530F299E14359E3A00BA4153 /* SRImage.m */,
+				530F29A114359E3A00BA4153 /* SRImageVersion.h */,
+				530F29A214359E3A00BA4153 /* SRImageVersion.m */,
+				530F299314359E3A00BA4153 /* SRField.h */,
+				530F299414359E3A00BA4153 /* SRField.m */,
+				537CECB11435B4AD00B64F78 /* Fields */,
+			);
+			name = Embedded;
+			sourceTree = "<group>";
+		};
+		537CECB11435B4AD00B64F78 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				530F297C14359E3A00BA4153 /* SRAtomicField.h */,
+				530F297D14359E3A00BA4153 /* SRAtomicField.m */,
+				530F298514359E3A00BA4153 /* SRCompoundField.h */,
+				530F298614359E3A00BA4153 /* SRCompoundField.m */,
+				530F297A14359E3A00BA4153 /* SRAssociationField.h */,
+				530F297B14359E3A00BA4153 /* SRAssociationField.m */,
+				537CECB41435B4CA00B64F78 /* AssociationFields */,
+				537CECB31435B4BF00B64F78 /* CompoundFields */,
+				537CECB21435B4B700B64F78 /* AtomicFields */,
+			);
+			name = Fields;
+			sourceTree = "<group>";
+		};
+		537CECB21435B4B700B64F78 /* AtomicFields */ = {
+			isa = PBXGroup;
+			children = (
+				530F29A514359E3A00BA4153 /* SRJsonField.h */,
+				530F29A614359E3A00BA4153 /* SRJsonField.m */,
+				530F297614359E3A00BA4153 /* SRArrayField.h */,
+				530F297714359E3A00BA4153 /* SRArrayField.m */,
+				530F298014359E3A00BA4153 /* SRBooleanField.h */,
+				530F298114359E3A00BA4153 /* SRBooleanField.m */,
+				530F298714359E3A00BA4153 /* SRDateField.h */,
+				530F298814359E3A00BA4153 /* SRDateField.m */,
+				530F296D14359E3A00BA4153 /* Base.h */,
+				530F299914359E3A00BA4153 /* SRFloatField.h */,
+				530F299A14359E3A00BA4153 /* SRFloatField.m */,
 				530F29BE14359E3A00BA4153 /* SRStringField.h */,
 				530F29BF14359E3A00BA4153 /* SRStringField.m */,
 				530F29C014359E3A00BA4153 /* SRTimeField.h */,
 				530F29C114359E3A00BA4153 /* SRTimeField.m */,
-				530F29C214359E3A00BA4153 /* SRWebhookDefinition.h */,
-				530F29C314359E3A00BA4153 /* SRWebhookDefinition.m */,
+				530F29A314359E3A00BA4153 /* SRIntegerField.h */,
+				530F29A414359E3A00BA4153 /* SRIntegerField.m */,
+			);
+			name = AtomicFields;
+			sourceTree = "<group>";
+		};
+		537CECB31435B4BF00B64F78 /* CompoundFields */ = {
+			isa = PBXGroup;
+			children = (
+				530F29A914359E3A00BA4153 /* SRLocationField.h */,
+				530F29AA14359E3A00BA4153 /* SRLocationField.m */,
+				530F299714359E3A00BA4153 /* SRFileField.h */,
+				530F299814359E3A00BA4153 /* SRFileField.m */,
+				530F299F14359E3A00BA4153 /* SRImageField.h */,
+				530F29A014359E3A00BA4153 /* SRImageField.m */,
+				530F297E14359E3A00BA4153 /* SRAttachmentField.h */,
+				530F297F14359E3A00BA4153 /* SRAttachmentField.m */,
+			);
+			name = CompoundFields;
+			sourceTree = "<group>";
+		};
+		537CECB41435B4CA00B64F78 /* AssociationFields */ = {
+			isa = PBXGroup;
+			children = (
+				530F29AB14359E3A00BA4153 /* SRManyAssociationField.h */,
+				530F29AC14359E3A00BA4153 /* SRManyAssociationField.m */,
+				530F29B814359E3A00BA4153 /* SROneAssociationField.h */,
+				530F29B914359E3A00BA4153 /* SROneAssociationField.m */,
+			);
+			name = AssociationFields;
+			sourceTree = "<group>";
+		};
+		537D2FBA1435B73900B0C36D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				530F299214359E3A00BA4153 /* SREntryProtocol.h */,
+				530F29AD14359E3A00BA4153 /* SRMappableObject.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		53DAC52514359F6700D1EDD7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				537CECAD1435B42B00B64F78 /* Subclasses */,
+				530F299014359E3A00BA4153 /* SREntryMappingDelegate.h */,
+				530F299114359E3A00BA4153 /* SREntryMappingDelegate.m */,
+				530F29B014359E3A00BA4153 /* SRObject+Private.h */,
+				530F29B114359E3A00BA4153 /* SRObject.h */,
+				530F29B214359E3A00BA4153 /* SRObject.m */,
+				537CECAB1435B42200B64F78 /* Objects */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

@@ -27,6 +27,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5322FCDA1435BECC008BFD9A"
+               BuildableName = "StorageRoomSpecs.octest"
+               BlueprintName = "StorageRoomSpecs"
+               ReferencedContainer = "container:RestKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

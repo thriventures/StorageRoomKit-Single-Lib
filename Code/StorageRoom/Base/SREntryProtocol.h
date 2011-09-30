@@ -6,6 +6,7 @@
 //  Copyright 2011 Thriventures. All rights reserved.
 //
 
+@class RKObjectMapping;
 
 /**
  * The protocol that must be implemented by all user-defined Entry classes.

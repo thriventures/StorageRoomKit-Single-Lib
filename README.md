@@ -132,7 +132,7 @@ Installation
 Quick Start (aka TL;DR)
 -----------
 
-1. Add Git submodule to your project: `git submodule add git://github.com/RestKit/RestKit.git RestKit`
+1. Add Git submodule to your project: `git submodule add git://github.com/thriventures/StorageRoomKit.git RestKit`
 1. Add cross-project reference by dragging **RestKit.xcodeproj** to your project
 1. Open build settings editor for your project
 1. Add **Other Linker Flags** for `-ObjC`
@@ -157,7 +157,9 @@ Quick Start (aka TL;DR)
 Visual Install Guide
 -------------------------
 
-An step-by-step visual install guide for Xcode 4.x is available on the RestKit Wiki: https://github.com/RestKit/RestKit/wiki/Installing-RestKit-in-Xcode-4.x
+An step-by-step visual install guide for Xcode 4.x is available on the RestKit Wiki: https://github.com/RestKit/RestKit/wiki/Installing-RestKit-in-Xcode-4.x.
+
+**If you use these instructions be sure to use the StorageRoomKit fork: git://github.com/thriventures/StorageRoomKit.git**
 
 Contributing
 -------------------------

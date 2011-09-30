@@ -18,7 +18,7 @@ RestKit itself is composed of three main components: **Network**, **Object Mappi
 1. **Object Mapping** - The object mapping layer provides a simple API for turning remote JSON/XML responses into local domain objects declaratively. Rather than working directly with *RKClient*, the developer works with *RKObjectManager*. *RKObjectManager* provides support for loading a remote resource path (see below for discussion) and calling back a delegate with object representations of the data loaded. Remote payloads are parsed to an NSDictionary representation and are then mapped to local objects using Key-Value Coding. Any KVC compliant class can be targeted for object mapping. RestKit also provides support for serializing local objects back into a wire format for submission back to your remote backend system. Local domain objects can be serialized to JSON or URL Form Encoded string representations for transport. To simplify the generation of URL's that identify remote resources, RestKit ships with an object routing implementation that can
 generate an appropriate URL based on the object and HTTP verb being utilized. Object mapping is a deep topic and is explored thoroughly in the [Object Mapping Design Document].
 1. **Core Data** - The Core Data layer provides additional support on top of the object mapper for mapping from remote resources to persist local objects. This is useful for providing offline support, holding on to transient data, and speeding up user interfaces by avoiding expensive trips to the web server. The Core Data support requires that you initialize an instance of *RKManagedObjectStore* and assign it to the *RKObjectManager*. RestKit includes a library of extensions to NSManagedObject that provide an Active Record pattern on top of the Core Data primitives. See the Examples/ subdirectory for examples of how to get this running. The Core Data support also provides *RKManagedObjectSeeder*, a tool for creating a local "seed database" to bootstrap an object model from local JSON files. This allows you to ship an app to the store that already has data pre-loaded and then synchronize with the cloud to keep your clients up to date.
-1. **Storage Room** - This layer provides additional helper classes to use the StorageRoom API. *SRObjectManager*, *SRRouter* and *SRObjectMappingProvider* are subclasses of the original RestKit implementations and contain StorageRoom specific methods. Each main Resource in StorageRoom contains its own class, an an example is the *SRCollection* class.
+1. **Storage Room** - This layer provides additional helper classes to use the StorageRoom API. *SRObjectManager*, *SRRouter* and *SRObjectMappingProvider* are subclasses of the original RestKit implementations and contain StorageRoom specific methods. Each API Resource in StorageRoom contains its own class, an example is the *SRCollection* class.
 
 Basic Usage
 -------------------------
@@ -164,7 +164,7 @@ Contributing
 
 Forks, patches and other feedback are always welcome. 
 
-A Google Group for development and usage of library is available at: [http://groups.google.com/group/restkit](http://groups.google.com/group/restkit)
+A Google Group for development and usage of RestKit is available at: [http://groups.google.com/group/restkit](http://groups.google.com/group/restkit)
 
 Follow RestKit on Twitter:[http://twitter.com/restkit](http://twitter.com/restkit)
 Follow StorageRoom on Twitter:[http://twitter.com/thriventures](http://twitter.com/thriventures)

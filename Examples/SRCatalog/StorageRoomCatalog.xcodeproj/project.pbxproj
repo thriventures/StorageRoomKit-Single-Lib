@@ -234,6 +234,13 @@
 			remoteGlobalIDString = 255B7588133BABBF00ED76AD;
 			remoteInfo = RestKit;
 		};
+		53AF8CB014497CDE008C1EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 537CEC4F1435AAA400B64F78 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5322FCDB1435BECC008BFD9A;
+			remoteInfo = StorageRoomSpecs;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -473,6 +480,7 @@
 				537CEC7A1435AAA400B64F78 /* RestKitSpecs.app */,
 				537CEC7C1435AAA400B64F78 /* libStorageRoomBase.a */,
 				537CEC7E1435AAA400B64F78 /* libStorageRoomCoreData.a */,
+				53AF8CB114497CDE008C1EE7 /* StorageRoomSpecs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -797,6 +805,13 @@
 			fileType = archive.ar;
 			path = libStorageRoomCoreData.a;
 			remoteRef = 537CEC7D1435AAA400B64F78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		53AF8CB114497CDE008C1EE7 /* StorageRoomSpecs.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StorageRoomSpecs.octest;
+			remoteRef = 53AF8CB014497CDE008C1EE7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

@@ -141,7 +141,7 @@ describe(@"ClassMethods", ^{
                 }
                 
                 NSObject <RKObjectMappingDefinition> *destinationMapping = [relationshipMapping mapping];
-                [[destinationMapping should] beKindOfClass:[RKObjectDynamicMapping class]];
+                [[destinationMapping should] beKindOfClass:[RKDynamicObjectMapping class]];
             }
         });
         

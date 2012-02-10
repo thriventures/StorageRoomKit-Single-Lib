@@ -1,3 +1,5 @@
+**This library is now obsolete. RestKit changed it's build process and Xcode is less buggy, so using a separate library makes a lot more sense! The new StorageRoomKit can be found on http://github.com/thriventures/StorageRoomKit.**
+
 Introduction
 =========================
 
